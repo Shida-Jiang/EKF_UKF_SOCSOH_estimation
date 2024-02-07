@@ -102,6 +102,7 @@ for iii=1:repeat
     state0=[0.9*0.95*Qmax*3600 0 Qmax*3600*0.95];%initial state: remaining capacity, Uc, maximum capacity
     state=state0.';
     initialCovariance=[(0.05*Qmax*3600)^2 0 0;0 0 0;0 0 (0.05*Qmax*3600)^2];
+    %initialCovariance=[(0.05*Qmax*3600)^2 0 0;0 1e-20 0;0 0 (0.05*Qmax*3600)^2]; %add this row to stop warnings
     Variance = initialCovariance;
     SOC_est(1)=state(1)/state(3);
     SOH_est(1)=state(3)/Qmax/3600;
