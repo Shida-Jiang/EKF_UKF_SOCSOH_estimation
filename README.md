@@ -10,3 +10,7 @@ You can see more explanation to this example in our paper.
 * "improved_EKF_simulation_udds" is the application of our EKF algorithm when using a UDDS profile
 * "improved_UKF_simulation_CC.m" is the application of the UKF algorithm when using a constant current profile
 * "improved_UKF_simulation_udds.m" is the application of the UKF algorithm when using a UDDS profile
+
+Update 07/10/2024:
+We have extended our improvements to all types of nonlinear KFs (including EKF, second-order EKF, UKF, CKF, etc.), and our newest work can be found here: https://arxiv.org/abs/2407.05717
+This newest paper presents a more general methodology and a more rigorous theoretical analysis and also has codes attached. We recommend readers see that paper to better understand the "improved EKF."
